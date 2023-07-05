@@ -1,0 +1,141 @@
+h1 {
+  margin: 10px;
+  text-align: center;
+}
+
+html {
+  background-color: rgba(141, 176, 232, 0.573);
+}
+
+ul {
+  padding: 1rem;
+}
+
+@media (min-width: 400px) {
+  nav {
+    display: grid;
+    padding: 1rem;
+    background-color: rgba(156, 239, 137, 0.795);
+    gap: 0.5rem;
+  }
+}
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+iframe {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: rgba(156, 239, 137, 0.795);
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-top: 0;
+}
+header a {
+  text-decoration: none;
+  color: rgb(9, 9, 188);
+  font-weight: bolder;
+  display: block;
+}
+header a:hover {
+  box-sizing: border-box;
+  font-style: italic;
+  border-bottom: 3px solid rgb(0, 92, 21);
+}
+header ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-evenly;
+}
+header .menu-toggle {
+  text-align: center;
+  margin: 10px;
+}
+header .menu-items {
+  display: none;
+  padding: 10px;
+  background-color: rgba(156, 239, 137, 0.795);
+}
+header .menu-toggle-label {
+  cursor: pointer;
+}
+header input[type=checkbox] {
+  display: none;
+}
+header input[type=checkbox]:checked ~ nav .menu-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 515px) {
+  header .menu-toggle-label {
+    display: none;
+  }
+  header .menu-items {
+    display: flex;
+  }
+}
+
+footer {
+  padding: 0.1rem;
+}
+
+.contact-page h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.contact-page p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contact-page form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-page form p {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.contact-page form p label {
+  margin-bottom: 5px;
+}
+.contact-page form p input,
+.contact-page form p textarea {
+  padding: 4px;
+  border-radius: 4px;
+}
+.contact-page form input[type=submit] {
+  margin-top: 10px;
+  align-self: center;
+  padding: 8px 20px;
+  font-weight: bold;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}/*# sourceMappingURL=stijl.css.map */

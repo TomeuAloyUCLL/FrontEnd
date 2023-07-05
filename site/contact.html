@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stijl.css">
+    <title>Contact</title>
+</head>
+
+<body class="contact-page">
+    <header>
+        <h1>De Balearen</h1>
+        <div class="menu-toggle">
+          <input type="checkbox" id="menu-toggle-checkbox">
+          <label for="menu-toggle-checkbox" class="menu-toggle-label">&#9776;</label>
+          <nav>
+            <ul class="menu-items">
+              <li><a href="index.html">Hoofdpagina</a></li>
+              <li><a href="mallorca.html">Mallorca</a></li>
+              <li><a href="menorca.html">Menorca</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <main>
+        <h2>Contact</h2>
+        <p>Zit je nog met vragen? Zijn er dingen niet helemaal duidelijk? Heb je tips om de website te verbeteren? </p>
+        <p>Wat het ook moge zijn, twijfel er zeker niet aan om het formulier hieronder in te vullen, zodat ik een antwoord kan bieden op al je vragen.</p>
+
+        <form>
+            <p>
+                <label for="naam">Naam en voornaam:</label>
+                <input id="naam" placeholder="Naam en voornaam" type="text" size="40" maxlength="80" required>
+            </p>
+            <p>
+                <label for="email">E-mail:</label>
+                <input id="email" placeholder="E-mail" type="email" size="40" required>
+            </p>
+            <p>
+                <label for="commentaar">Commentaar:</label>
+                <textarea id="commentaar" placeholder="Commentaar" cols="36" rows="5"></textarea>
+            </p>
+            <p>
+                <input type="submit" class="Verzenden" value="Verzenden">
+            </p>
+        </form>
+    </main> 
+    <footer>
+        &copy; Bartolome Aloy
+    </footer>
+</body>
+
+</html>

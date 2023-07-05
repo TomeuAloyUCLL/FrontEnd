@@ -1,0 +1,70 @@
+@use '../sass-utils/variables' as v;
+
+body{
+    margin: 0;
+}
+
+header {
+background-color: rgba(156, 239, 137, 0.795);
+width: 100%;
+padding: 0;
+margin: 0;
+margin-top: 0;
+
+a {
+    text-decoration: none;
+    color: v.$text-color;
+    font-weight: bolder;
+    display: block;
+}
+
+a:hover {
+    box-sizing: border-box;
+    font-style: italic;
+    border-bottom: 3px solid rgb(0, 92, 21);
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-evenly;
+}
+
+.menu-toggle {
+    text-align: center;
+    margin: 10px;
+}
+
+.menu-items {
+    display: none;
+    padding: 10px;
+    background-color: rgba(156, 239, 137, 0.795);
+}
+
+.menu-toggle-label {
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ nav .menu-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 515px) {
+    .menu-toggle-label {
+    display: none;
+    }
+
+    .menu-items {
+    display: flex;
+    }
+}
+}
